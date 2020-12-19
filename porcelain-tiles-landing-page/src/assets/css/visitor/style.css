@@ -1,0 +1,870 @@
+#header {
+  background-color: #184241 !important;
+  font-family: sans-serif !important;
+}
+#header p {
+  font-size: 15px !important;
+}
+#header a {
+  text-decoration: none !important;
+  color: white !important;
+  font-size: smaller !important;
+}
+#bannerBox {
+  position: relative;
+  padding-top: 35px;
+  text-align: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+.bannerContainer:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  opacity: 0.8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+}
+.blackLayer:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 99%;
+  display: inline-block;
+  opacity: 0.8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+}
+/* UX zoom in effects on landing page images */
+.imageWrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+.blockCategoryImage {
+  -webkit-transition: all 1.2s ease;
+  -moz-transition: all 1.2s ease;
+  -ms-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+  vertical-align: middle !important;
+  filter: brightness(65%);
+}
+.blockCategoryImage:hover {
+  -webkit-transform: scale(0.1);
+  transform: scale(1.1);
+  filter: brightness(100%);
+  -webkit-transition: all 1.2s ease;
+}
+#bannerBox img {
+  display: block;
+  z-index: 1;
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.heading {
+  font-weight: lighter;
+}
+.centered h1 {
+  font-size: 60px;
+}
+.primaryNav a h6:hover {
+  color:aquamarine !important;
+  transition: 0.5s ease;
+}
+.newcolleAndGrayClinks {
+  margin-bottom: 3px !important;
+  position: absolute !important;
+  top: 49%;
+}
+.categoryName {
+  position: absolute !important;
+  top: 20% !important;
+  left: 34%;
+}
+/* For Large laptop or pc screens */
+@media only screen and (max-width: 1444px) {
+  .favourites, .searchBox, .languageAndCountry {
+    height: auto;
+    background-color: black !important;
+    z-index: 1;
+    position: absolute !important;
+    left: 1020px;
+    display: none;
+    overflow-y: auto;
+  }
+  .centered h1 {
+    font-size: 60px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .primaryNavInBanner {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    text-align: center;
+  }
+  .primaryNav a h6 {
+    font-size: 18px !important;
+  }
+  .bm-burger-button {
+    top: 60px !important;
+  }
+  .companyName {
+    top: 22px !important;
+    left: 95px !important;
+    width: 90% !important;
+  }
+  .companyName h2 {
+    font-size: 28px !important;
+  }
+  .bm-menu-wrap {
+    height: 100%;
+    background-color: black !important;
+    position: absolute !important;
+    bottom: 0% !important;
+    left: 0% !important;
+    right: 5% !important;
+    top: 4.5% !important;
+    opacity: 0.9 !important;
+  }
+  .collection {
+    max-height: 330px !important;
+  }
+  .importantUpdateNoteDiv {
+    padding: 85px !important;
+  }
+  .showroomsAndContact {
+    height: 780px !important;
+  }
+  .bathroomCat{
+    left: -340px !important;
+  }
+  .kitchenCat{
+    left: -437px !important;
+  }
+  .accessoriesCat{
+    left: -515px !important;
+  }
+  .outletCat{
+    left: -625px !important;
+  }
+}
+/* For laptop screen */
+@media only screen and (max-width: 1024px) {
+  .favourites, .searchBox, .languageAndCountry {
+    height: auto;
+    width: 400px;
+    background-color: black !important;
+    z-index: 1;
+    position: absolute !important;
+    left: 600px;
+    display: none;
+  }
+  .primaryNav a h6 {
+    font-size: 14px !important;
+  }
+  .centered h1 {
+    font-size: 40px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .primaryNavInBanner {
+    position: absolute;
+    top: 34%;
+    left: 29%;
+    text-align: center;
+  }
+  .bm-burger-button {
+    top: 65px !important;
+  }
+  .companyName {
+    top: 23px !important;
+    left: 85px !important;
+  }
+  .bm-burger-button {
+    width: 30px !important;
+    height: 20px !important;
+  }
+  .bm-menu-wrap {
+    height: 100%;
+    background-color: black !important;
+    position: absolute !important;
+    bottom: 0% !important;
+    left: 0% !important;
+    right: 5% !important;
+    top: 6.1% !important;
+    opacity: 0.9 !important;
+  }
+  .bm-item-list a {
+    font-size: 17px !important;
+  }
+  .collection {
+    max-height: 233px !important;
+  }
+  .categoryName h1 {
+    font-size: 25px !important;
+  }
+  .newCollection h1 {
+    font-size: 25px;
+  }
+  .newCollection h5 {
+    font-size: 15px !important;
+  }
+  .newCollection {
+    margin-left: 30px !important;
+  }
+  .grayClinks h2 {
+    font-size: 25px !important;
+  }
+  .grayClinks h5 {
+    font-size: 15px !important;
+  }
+  .lifestyle {
+    height: 366px !important;
+  }
+  .importantUpdateNoteDiv {
+    padding: 15px !important;
+  }
+  .secondaryNav a h3 {
+    font-size: 20px !important;
+  }
+  .showroomsAndContact {
+    height: 545px !important;
+  }
+  .bathroomCat{
+    left: -240px !important;
+  }
+  .kitchenCat{
+    left: -320px !important;
+  }
+  .accessoriesCat{
+    left: -385px !important;
+  }
+  .outletCat{
+    left: -475px !important;
+  }
+}
+/* For tablet screen */
+@media only screen and (max-width: 768px) {
+  .favourites, .searchBox, .languageAndCountry {
+    height: auto;
+    width: 300px;
+    background-color: black !important;
+    z-index: 1;
+    position: absolute !important;
+    left: 435px;
+    display: none;
+  }
+  .centered h1 {
+    font-size: 25px;
+  }
+  .centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .primaryNav a h6 {
+    font-size: 12px !important;
+  }
+  .primaryNavInBanner {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    text-align: center;
+  }
+  .bm-burger-button {
+    top: 77px !important;
+    width: 25px !important;
+    height: 20px !important;
+  }
+  .bm-menu-wrap {
+    height: 100%;
+    background-color: black !important;
+    position: absolute !important;
+    bottom: 0% !important;
+    left: 0% !important;
+    right: 5% !important;
+    top: 12% !important;
+    opacity: 0.9 !important;
+  }
+  .companyName {
+    top: 35px !important;
+    left: 80px !important;
+    width:650px !important;
+  }
+  .secondaryNav a h3 {
+    font-size: 19px !important;
+  }
+  .newsletter h1 {
+    font-size: 25px;
+  }
+  .collection {
+    max-height: 174px !important;
+  }
+  .newCollection h1 {
+    font-size: 15.5px;
+  }
+  .newCollection h5 {
+    font-size: 11px !important;
+  }
+  .newCollection {
+    margin-left: 20px !important;
+  }
+  .grayClinks {
+    position: absolute;
+    bottom: 15px !important;
+  }
+  .grayClinks h2 {
+    font-size: 15.5px !important;
+  }
+  .grayClinks h5 {
+    font-size: 11px !important;
+  }
+  .clinker h1 {
+    margin-left: 44px;
+  }
+  .importantUpdateNoteDiv {
+    padding: 10px !important;
+  }
+  .importantUpdateNoteDiv h6 {
+    font-size: 11px !important;
+  }
+  .importantUpdateNoteDiv h2 {
+    font-size: 22px !important;
+  }
+  .importantUpdateNoteDiv p {
+    font-size: 13px !important;
+  }
+  .showroomsAndContact {
+    height: 415px !important;
+  }
+  .bathroomCat{
+    left: -195px !important;
+  }
+  .kitchenCat{
+    left: -265px !important;
+  }
+  .accessoriesCat{
+    left: -322px !important;
+  }
+  .outletCat{
+    left: -401px !important;
+  }
+}
+/* For mobile large screen */
+@media only screen and (max-width: 425px) {
+  .favourites, .searchBox, .languageAndCountry {
+    height: 250px;
+    width: 300px;
+    background-color: black !important;
+    z-index: 1;
+    position: absolute !important;
+    left: 120px;
+    display: none;
+    overflow-y: auto;
+    padding-top: 20px;
+  }
+  .cardSlider2 {
+    padding-top: 130px;
+  }
+  .centered h1 {
+    font-size: 18px;
+  }
+  .centered {
+    position: absolute;
+    top: 67% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .primaryNavInBanner {
+    position: absolute;
+    top: 68%;
+    left: -5% !important;
+    text-align: center;
+  }
+  .primaryNav a h6 {
+    font-size: 10px !important;
+  }
+  .bm-burger-button {
+    top: 80px !important;
+  }
+  .companyName {
+    top: 55px !important;
+    left: 65px !important;
+    width: 350px !important;
+  }
+  .companyName h2 {
+    font-size: 22px !important;
+  }
+  .bm-burger-button {
+    width: 23px !important;
+    height: 17px !important;
+    margin-top: 17px !important;
+  }
+  .bm-menu-wrap {
+    height: 100%;
+    background-color: black !important;
+    position: absolute !important;
+    bottom: 0% !important;
+    left: 0% !important;
+    right: 5% !important;
+    top: 27.3% !important;
+    opacity: 0.9 !important;
+  }
+  .bm-item-list a {
+    font-size: 14px !important;
+  }
+  .secondaryNav a h3 {
+    font-size: 13px !important;
+  }
+  .newsletter h1 {
+    font-size: 20px;
+    margin-right: 35px !important;
+  }
+  .newsletterTextbox {
+    margin-left: 42px;
+  }
+  .clinker h1 {
+    position: relative !important;
+    bottom: 85px;
+    font-size: 55px !important;
+    left: 0px;
+  }
+  .clinker h5 {
+    position: relative !important;
+    bottom: 80px;
+    font-size: 25px !important;
+    left: 0px;
+  }
+  .collection {
+    margin-top: -3px !important;
+  }
+  .newCollection {
+    margin-left: 100px !important;
+  }
+  .newCollection h1 {
+    font-size: 25px;
+  }
+  .newCollection h5 {
+    font-size: 15px !important;
+  }
+  .grayClinks h2 {
+    font-size: 25px !important;
+  }
+  .grayClinks h5 {
+    font-size: 15px !important;
+  }
+  .marbleClinksMain {
+    margin-bottom: 175px !important;
+    margin-top: -6px !important;
+  }
+  .grayClinksMain {
+    position: relative !important;
+    margin-bottom: -2px !important;
+  }
+  .showroomsAndContact {
+    height: 929px !important;
+  }
+  .bathroomCat{
+    left: 37px !important;
+  }
+  .kitchenCat{
+    left: -23px !important;
+  }
+  .accessoriesCat{
+    left: -73px !important;
+  }
+  .outletCat{
+    left: -142px !important;
+  }
+}
+/* For mobile medium screen */
+@media only screen and (max-width: 425px) {
+  .favourites, .searchBox, .languageAndCountry {
+    height: 230px;
+    width: 250px;
+    background-color: black !important;
+    z-index: 1;
+    position: absolute !important;
+    left: 125px;
+    display: none;
+    overflow-y: auto;
+    padding-top: 30px;
+  }
+  .centered h1 {
+    font-size: 18px;
+  }
+  .companyName{
+    width: 300px !important;
+  }
+  .centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .primaryNavInBanner {
+    position: absolute;
+    top: 68%;
+    left: -20% !important;
+    text-align: center;
+  }
+  #bannerBox img {
+    height: 250px;
+  }
+  .newsletter h1 {
+    font-size: 20px;
+    width: 90%;
+    margin-left: 25px !important;
+  }
+  .clinker h1 {
+    position: relative !important;
+    bottom: 85px;
+    font-size: 55px !important;
+    left: 0px;
+    margin-right: 20px;
+  }
+  .clinker h5 {
+    font-size: 20px !important;
+  }
+  .marbleClinks {
+    position: absolute !important;
+    top: 45px !important;
+    left: 100px !important;
+  }
+  .newCollection {
+    position: relative !important;
+    top: 0px !important;
+    left: -30px !important;
+  }
+  .showroomsAndContact {
+    height: 820px !important;
+  }
+}
+/* For mobile small screen */
+@media only screen and (max-width: 320px) {
+  .favourites, .searchBox {
+    height: 220px;
+    width: 225px;
+    background-color: black !important;
+    z-index: 1;
+    position: absolute !important;
+    left: 95px;
+    display: none;
+    overflow-y: auto;
+    top: 25px;
+  }
+  .centered h1 {
+    font-size: 14px;
+  }
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  #bannerBox img {
+    height: 250px;
+  }
+  .primaryNavInBanner {
+    position: absolute;
+    top: 70%;
+    left: -27% !important;
+    text-align: center;
+  }
+  .primaryNav a h6 {
+    font-size: 8px !important;
+  }
+  .bm-burger-button {
+    top: 85px !important;
+  }
+  .companyName {
+    top: 60px !important;
+    left: 70px !important;
+    width: 240px !important;
+  }
+  .companyName h2 {
+    font-size: 18px !important;
+  }
+  .bm-menu-wrap {
+    top: 27.2% !important;
+  }
+  .secondaryNav a h3 {
+    font-size: 10px !important;
+  }
+  .newsletter h1 {
+    font-size: 16px;
+    width: 90%;
+    margin-left: 25px !important;
+  }
+  .marbleClinks {
+    position: absolute !important;
+    left: 65px !important;
+    top: 50px !important;
+    margin-right: 10px !important;
+  }
+  .newCollection {
+    position: relative !important;
+    bottom: 25px !important;
+    right: 20px !important;
+  }
+  .newCollection h1 {
+    font-size: 19px !important;
+  }
+  .showroomsAndContact {
+    height: 700px !important;
+  }
+  .bathroomCat{
+    left: 29px !important;
+  }
+  .kitchenCat{
+    left: -23px !important;
+  }
+  .accessoriesCat{
+    left: -67px !important;
+  }
+  .outletCat{
+    left: -125px !important;
+  }
+}
+.card img {
+  border-radius: 12px !important;
+  height: 200px;
+}
+#addToCartBtn {
+  outline: #184241 !important;
+  transition: 0.7s;
+  font-weight: bold;
+  font-size: 13px;
+}
+#addToCartBtn:hover {
+  background-color: #184241;
+  color: white;
+  transition: 1s;
+}
+.card h4, .card h5 {
+  color: #184241;
+}
+.card {
+  height: auto !important;
+}
+.mainFooter {
+  background-color: black !important;
+}
+.socialIcons span {
+  color: lightgray;
+  padding-left: 10px;
+}
+.rectangle {
+  width: 40px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 7px;
+}
+.fa-phone, .fa-envelope, .fa-whatsapp {
+  color: black;
+}
+.contactIcons h5 {
+  font-weight: lighter;
+}
+.footerImages span {
+  display: inline-block;
+}
+.primaryNav a {
+  text-decoration: none !important;
+  color: white;
+}
+.primaryNav a:hover {
+  text-decoration: none !important;
+  color: white;
+}
+.secondaryNav h6 {
+  font-weight: bolder;
+}
+.secondaryNav a {
+  text-decoration: none !important;
+  color: #184241;
+}
+.secondaryNav a:hover {
+  color: black;
+}
+.companyName {
+  height: 100px;
+  position: absolute;
+  top: 2%;
+  left: 7%;
+  text-align: left !important;
+}
+.newsletter {
+  background-color: #184241;
+}
+.newsletter h1 {
+  font-weight: 380;
+}
+.footerForm input[type="text"], .footerForm input[type="email"] {
+  height: 28px;
+}
+.collection {
+  background-color: black !important;
+  color: white !important;
+  max-height: 307px;
+}
+.lifestyleAndConcrete {
+  max-height: 365px;
+}
+.readMoreBtn {
+  background-color: #184241 !important;
+  color: white !important;
+}
+/* Side menu css */
+* {
+  box-sizing: border-box;
+}
+#page-wrap {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 40px;
+  height: 25px;
+  left: 30px;
+  top: 50px;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: white;
+}
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  height: 100%;
+  background-color: black !important;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 5%;
+  top: 5.2%;
+  opacity: 0.9;
+}
+/* General sidebar styles */
+.bm-menu {
+  padding: 2.5em 1.5em 0;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: #929292;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.bm-item:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.carousel-control-prev, .carousel-control-next {
+  background-color: black !important;
+  height: 30px !important;
+  width: 30px !important;
+  margin-top: 215px !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* Dropdown when hover on primary navigation */
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-menu {
+  background-color: #184241 !important;
+  margin-top: -10px !important;
+}
+.dropdown-menu a {
+  transition: all 1.2s ease;
+}
+.dropdown-menu a:hover {
+  color: white;
+  background-color: black;
+  transition: all 1.2s ease;
+}
+/* Disabling carousel indicators from banner slider */
+#bannerBox div ol {
+  display: none !important;
+}
+#bannerBox div .carousel-control-prev, #bannerBox div .carousel-control-next {
+  display: none !important;
+}
+.dropdown-menu{
+  height: 65vh;
+  width: 80vw;
+  background-color: white !important;
+}
